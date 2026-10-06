@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feel — Build the way you feel.</title>
+<meta name="description" content="Recrutez une équipe : votre idée devient une organisation qui tourne, en moins de 30 minutes, sans rien connaître à l'IA.">
+<style>
+  :root {
+    --fond: #f6f4ef;
+    --encre: #1c1c1e;
+    --discret: #58585d;
+    --accent: #14337a;
+    --police: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Arial, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-snap-type: y proximity; }
+  body {
+    background: var(--fond);
+    color: var(--encre);
+    font-family: var(--police);
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+  }
+  .ecran {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8vh clamp(1.5rem, 8vw, 9rem);
+    scroll-snap-align: start;
+  }
+  .marque {
+    position: fixed;
+    top: 1.75rem;
+    left: clamp(1.5rem, 8vw, 9rem);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  h1, p.phrase {
+    font-size: clamp(2.25rem, 6.4vw, 6rem);
+    line-height: 1.06;
+    letter-spacing: -0.035em;
+    max-width: 16em;
+    font-weight: 600;
+  }
+  p.phrase { text-wrap: balance; }
+  h1 { text-wrap: balance; }
+  .secondaire { color: var(--discret); }
+  .chiffre {
+    font-size: clamp(7rem, 26vw, 24rem);
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+    font-weight: 600;
+  }
+  .legende {
+    margin-top: 1.5rem;
+    font-size: clamp(1.25rem, 2.6vw, 2rem);
+    letter-spacing: -0.02em;
+    color: var(--discret);
+  }
+  .discret {
+    font-size: clamp(1.1rem, 1.8vw, 1.5rem);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+    max-width: 28em;
+    color: var(--discret);
+    margin-top: 2.5rem;
+  }
+  .soutien {
+    margin-top: 2rem;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    line-height: 1.35;
+    letter-spacing: -0.015em;
+    max-width: 30em;
+    color: var(--discret);
+  }
+  .acces { margin-left: 1.25rem; font-weight: 500; color: var(--discret); text-decoration: none; }
+  .acces:hover { color: var(--encre); }
+  .cache { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .bouton {
+    display: inline-block;
+    margin-top: 2.5rem;
+    background: var(--accent);
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    border-radius: 4px;
+    transition: background .2s;
+  }
+  .bouton:hover { background: #0d2559; }
+  .bouton:focus-visible { outline: 3px solid var(--encre); outline-offset: 3px; }
+  .pied { min-height: 70vh; }
+  footer {
+    padding: 2rem clamp(1.5rem, 8vw, 9rem) 2.5rem;
+    font-size: .875rem;
+    color: var(--discret);
+  }
+  @media (max-width: 600px) {
+    .bouton { width: 100%; text-align: center; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .bouton { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="marque">Feel <a class="acces" href="#action">Rejoindre</a></div>
+
+<main>
+  <section class="ecran">
+    <h1>Stop messing with machines. Build the way you feel.</h1>
+    <p class="soutien">Votre idée devient une organisation qui tourne en moins de 30 minutes, sans rien connaître à l'IA.</p>
+  </section>
+
+  <section class="ecran">
+    <p class="phrase">Plus rien entre votre idée et son exécution.</p>
+  </section>
+
+  <section class="ecran">
+    <p class="phrase">Votre idée n'a pas besoin d'être nette. <span class="secondaire">Commencez comme elle est.</span></p>
+  </section>
+
+  <section class="ecran">
+    <p class="chiffre" aria-hidden="true">&lt;30</p>
+    <p class="cache">Moins de 30 minutes</p>
+    <p class="legende">minutes, de l'idée à une organisation qui tourne.</p>
+  </section>
+
+  <section class="ecran">
+    <p class="phrase">Une équipe vous rejoint. <span class="secondaire">On s'occupe du reste, vous n'avez rien à comprendre de l'IA.</span></p>
+    <p class="discret">Et si vous voulez décider vous-même de chaque détail, vous le pouvez à tout moment. Jamais obligatoire.</p>
+  </section>
+
+  <section class="ecran pied" id="action">
+    <p class="phrase">Prêt quand vous l'êtes.</p>
+    <!-- Cible du bouton à définir (inscription, démo, liste d'attente). -->
+    <a class="bouton" href="#action">Rejoindre la liste d'attente</a>
+  </section>
+</main>
+
+<footer>Feel</footer>
+
+</body>
+</html>
